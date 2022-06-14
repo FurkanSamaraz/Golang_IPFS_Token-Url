@@ -23,7 +23,7 @@ func main() {
 	// Seçtiğimiz resim mi açıyoruz.
 	img, _ := os.Open("./ornek.png")
 
-	// Tokenimize durumu atıyoruz ve içini resimimizi ekliyoruz.
+	// Tokenimize durumu atıyoruz ve içini resimimizi ekliyoruz. sonuç olarak cid yani benzersiz bir parmak izi döndürüyor.
 	cid, _ := conn.Put(ctx, img)
 
 	// Url erişim çıktımızı alıyoruz ve tarayıcıya yapıştırarak erişim sağlıyoruz.
